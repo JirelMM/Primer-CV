@@ -148,6 +148,9 @@ body{
   font-size: 25px;
 }
 
+
+/* *** Inicio  ***  */
+
 #contTarIni{
   height: 100%;
   width: 100%;
@@ -206,7 +209,7 @@ body{
   align-items: center;
   padding: 1%;
   text-decoration: none;
-  transition: ease-out 0.3s;
+  transition: ease-out 0.2s;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.747);
   border: 1px solid #ffffff79;
 }
@@ -221,14 +224,14 @@ body{
 .descargaCV i{
   font-size: 450%;
   line-height: 60px;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   color: #000;
 }
 
 .descargaCV span{
   font-family: f1;
   font-size: 20px;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   color: #000;
 }
 .descargaCV:hover span{
@@ -236,8 +239,8 @@ body{
   font-size: 20px;
 }
 
+/* *** Conocimientos  *** */
 
-}
 .contTarCono h2{
   
   width: 50%;
@@ -426,7 +429,7 @@ body{
     color: #fff;
 }
 
-/*  ***    **** */
+/*  *** Estilos Conocimiento Sistemas operativos   **** */
 
 .iconosos{
     display: flex;
@@ -523,6 +526,144 @@ body{
   .os .icons:nth-child(5) span{
     color: #fff;
 }
+
+
+/*  ***  Proyectos  ***  */
+
+.contTarPro{
+  padding: 2%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.proyectos1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+.proyectos2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.cards
+{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  background: #447ab8ec;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 2px rgba(99, 98, 98, 0.76);
+  background: linear-gradient(
+    to left top, #447ab8, #447ab82f
+  );
+}
+.cards .imgBx
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 10;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-origin: top;
+}
+.cards:hover .imgBx
+{
+  transform: translateY(30px) scale(0.4);
+}
+.cards .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards .content
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.5s;
+  padding-bottom: 5%;
+  transform: translateY(100%);
+}
+.cards:hover .content
+{
+  transform: translateY(0);
+}
+.cards .content .details
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.cards .content .details h2
+{
+  font-family: f1;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+.cards .content .details h2 span
+{
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sci
+{
+  position: relative;
+  display: flex;
+  margin-top: 2%;
+  width: 100%;
+
+}
+.sci li 
+{
+  list-style: none;
+  margin: 4px;
+}
+.sci li a 
+{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #294d69;
+  font-size: 1.5em;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.sci li a:hover 
+{
+  background: #fff;
+  color: #294d69;
+  transform: rotate(360deg);
+}
+
+
+
+
 
 @media only screen and (max-width: 1023px){
 
